@@ -14,9 +14,9 @@ export default function LandingPage() {
 
       <main className="flex-1">
         {/* ================================================================= */}
-        {/* HERO SECTION */}
+        {/* HERO / PRODUCT SECTION */}
         {/* ================================================================= */}
-        <section className="border-b border-[#ddd9cf] pt-14 pb-16 sm:pt-20 sm:pb-24">
+        <section id="product" className="scroll-mt-16 border-b border-[#ddd9cf] pt-14 pb-16 sm:pt-20 sm:pb-24">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               {/* Left Column: Headline with intentional olive color emphasis */}
@@ -91,7 +91,7 @@ export default function LandingPage() {
         {/* ================================================================= */}
         {/* HOW IT WORKS (01 - 04 FLOW) WITH OLIVE / TERRACOTTA COLOR ACCENTS */}
         {/* ================================================================= */}
-        <section id="how-it-works" className="border-b border-[#ddd9cf] py-16 sm:py-20 bg-[#f2efe7]">
+        <section id="how-it-works" className="scroll-mt-16 border-b border-[#ddd9cf] py-16 sm:py-20 bg-[#f2efe7]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-12 pb-4 border-b border-[#ddd9cf]">
               <div>
@@ -182,7 +182,7 @@ export default function LandingPage() {
         {/* ================================================================= */}
         {/* HARDWARE SPECIFICATION SHEET WITH COLOR-CODED LABELS */}
         {/* ================================================================= */}
-        <section id="hardware" className="border-b border-[#ddd9cf] py-16 sm:py-20 bg-[#f7f5ef]">
+        <section id="hardware" className="scroll-mt-16 border-b border-[#ddd9cf] py-16 sm:py-20 bg-[#f7f5ef]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-12 pb-4 border-b border-[#ddd9cf]">
               <div>
@@ -345,7 +345,7 @@ export default function LandingPage() {
         {/* ================================================================= */}
         {/* OPERATIONS / ROLES SECTION */}
         {/* ================================================================= */}
-        <section id="operations" className="border-b border-[#ddd9cf] py-16 sm:py-20 bg-[#f2efe7]">
+        <section id="operations" className="scroll-mt-16 border-b border-[#ddd9cf] py-16 sm:py-20 bg-[#f2efe7]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-12 pb-4 border-b border-[#ddd9cf]">
               <div>

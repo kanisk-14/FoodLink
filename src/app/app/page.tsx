@@ -56,7 +56,7 @@ function AppShellContent() {
   useEffect(() => {
     const session = getClientSession();
     if (!session) {
-      router.replace('/login');
+      window.location.replace('/login');
       return;
     }
 
@@ -116,7 +116,7 @@ function AppShellContent() {
 
   const handleLogout = () => {
     clearClientSession();
-    router.push('/login');
+    window.location.replace('/login');
   };
 
   const handleNavChange = (newNav: typeof activeNav) => {
@@ -189,12 +189,12 @@ function AppShellContent() {
   const inTransitCount = batches.filter((b) => b.status === 'in_transit').length;
   const completedCount = batches.filter((b) => b.status === 'intake_verified').length;
 
-  if (!isAuthChecked) {
+  if (!isAuthChecked || !currentUser) {
     return (
       <div className="min-h-screen bg-[#f7f5ef] flex items-center justify-center font-mono text-xs text-[#6f706a]">
         <div className="flex items-center gap-2">
           <span className="w-1.5 h-1.5 bg-[#536b4f] animate-pulse" />
-          <span>VERIFYING SESSION CREDENTIALS...</span>
+          <span>AUTHENTICATION REQUIRED — REDIRECTING TO LOGIN...</span>
         </div>
       </div>
     );

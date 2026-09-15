@@ -82,6 +82,7 @@ export default function LandingPage() {
                   time="12:42 PM"
                   lidStatus="LATCHED"
                   categoryTag="PREPARED MEAL"
+                  interactiveNodeConnect={true}
                 />
               </div>
             </div>
